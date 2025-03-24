@@ -1,0 +1,52 @@
+@import url(reset.css);
+
+header {
+  color: darkblue;
+}
+
+.hw-03 li {
+  color: red;
+}
+.hw-03 ul li + li {
+  color: green;
+}
+.hw-03 ul li > ul li {
+  color: blue;
+}
+.hw-03 ul li > ul > li + li {
+  color: orange;
+}
+.hw-03 ul li > ul li > ol > li {
+  color: #4597f7;
+}
+.hw-03 ul li > ul li > ol > li + li {
+  color: #5d5d5d;
+}
+.hw-03 ul > li > ul > li > span {
+  color: #a0f0fc;
+}
+
+h1 {
+  color: crimson;
+}
+h1 + p {
+  color: rgb(90, 90, 90);
+}
+#intro {
+  color: gold;
+}
+[class*="ing"] {
+  color: purple;
+}
+h2 {
+  color: red;
+}
+h2.modification {
+  color: darkviolet;
+}
+.main .before-after {
+  color: orangered;
+}
+footer * {
+  color: lime;
+}
