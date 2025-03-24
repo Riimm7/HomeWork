@@ -1,5 +1,21 @@
 @import url(reset.css);
 
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.back-link:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
 header {
   color: darkblue;
 }
