@@ -80,7 +80,7 @@
 .card {
   display: inline-block;
   vertical-align: top;
-  width: 230px;
+  max-width: 230px;
   padding-left: 40px;
   padding-bottom: 35px;
   margin: 0 20px;
