@@ -1,8 +1,7 @@
-/* Підключення фрифтів */
-
+/* Підключення шрифтів */
 /* Google Fonts */
-/* @import url("https://fonts.googleapis.com/css2?family=Carme&display=swap"); */
 /* Google Fonts (Plugin) */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:Regular,700&display=swap);
 
 /* Локальне підключення шрифтів */
 @import url("fonts.css");
@@ -11,6 +10,17 @@
 @import url("reset.css");
 
 /* Основні стилі */
+.main {
+  font-family: 'Circular Std', 'Arial Rounded', 'Proxima Nova', sans-serif;
+  color: #FFF;
+  background-color: #231F8B;
+}
+
+.main section {
+  padding-top: 112px;
+  padding-bottom: 100px;
+}
+
 .back-link {
   display: inline-block;
   margin-top: 20px;
@@ -22,8 +32,99 @@
   font-weight: bold;
   transition: background-color 0.3s, transform 0.3s;
 }
+
 .back-link:hover {
   background-color: #218838;
   transform: translateY(-2px);
 }
 
+.container {
+  max-width: 1090px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main-content {
+  margin-bottom: 70px;
+}
+
+.main-content h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.main-content h6 {
+  color: #5A54F2;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  margin-bottom: 10px;
+}
+
+.main-content p {
+  font-family: 'Circular Std Book', 'Arial Rounded', 'Proxima Nova', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+
+.cards {
+  margin: 0 -20px;
+  overflow: hidden;
+  font-size: 0;
+}
+
+.card {
+  display: inline-block;
+  vertical-align: top;
+  width: 230px;
+  padding-left: 40px;
+  padding-bottom: 35px;
+  margin: 0 20px;
+  background-color: #FFF;
+}
+
+.card h5 {
+  margin-bottom: 20px;
+  color: #252B42;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+}
+
+.card p {
+  max-width: 136px;
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #737373;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+
+.lower-card {
+  margin-top: 48px;
+}
+
+.icon {
+  margin: 35px 0 20px;
+}
+
+.divider {
+  width: 50px;
+  height: 2px;
+  background-color: #E74040;
+  margin-bottom: 20px;
+}
+
+.other-style {
+  background: #5A54F2;
+}
+
+.other-style h5,
+.other-style p {
+  color: #FFF;
+}
