@@ -1,6 +1,7 @@
 /* Підключення фрифтів */
 
 /* Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,600,700&display=swap");
 /* @import url("https://fonts.googleapis.com/css2?family=Carme&display=swap"); */
 /* Google Fonts (Plugin) */
 
@@ -22,8 +23,281 @@
   font-weight: bold;
   transition: background-color 0.3s, transform 0.3s;
 }
+
 .back-link:hover {
   background-color: #218838;
   transform: translateY(-2px);
 }
 
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+  max-width: 1260px;
+  /* width: 100%; */
+  margin: 0 auto;
+  padding: 0 30px;
+  background-color: #412672;
+
+}
+
+.business {
+  font-family: "Inter", "Helvetica Neue", "Roboto", "Arial", sans-serif;
+  font-weight: 400;
+  /* background-color: #412672; */
+  padding-bottom: 102px;
+}
+
+.business h1 {
+  font-size: 38px;
+  color: #fff;
+  margin-bottom: 31px;
+}
+
+.business h1>span {
+  font-weight: 700;
+}
+
+.first-task {
+  margin-bottom: 102px;
+}
+
+.cards {
+  color: #000;
+  font-size: 0;
+}
+
+.card {
+  display: inline-block;
+  padding: 20px;
+  background-color: #fff;
+  max-width: 386.6px;
+  width: 100%;
+  min-height: 470px;
+  /* height: 100%; */
+  vertical-align: top;
+}
+
+.card *:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.card:not(:last-child) {
+  margin-right: 20px;
+}
+
+.card:hover {
+  background-color: #FFBE48;
+}
+
+.card-title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.card-text {
+  color: #4F4F4F;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 126.667%;
+}
+
+.card-link {
+  color: #FE3F3F;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 126.667%;
+}
+
+.card-link a:hover {
+  text-decoration: underline;
+}
+
+.second-task {
+  background-color: #fff;
+  padding-top: 153px;
+  padding-bottom: 137px;
+  font-weight: 400;
+  color: #412672;
+
+}
+
+.inner-container {
+  max-width: 518px;
+  margin: 0 auto;
+}
+
+.inner-container>*:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.second-task h2 {
+  font-size: 34px;
+}
+
+.second-task h2>span {
+  font-weight: 700;
+}
+
+.second-task p {
+  font-size: 22px;
+  line-height: normal;
+}
+
+.second-task li {
+  color: #4F4F4F;
+  font-size: 20px;
+  line-height: 255%;
+}
+
+.second-task li::before {
+  content: "";
+  display: inline-block;
+  background: url(../img/icon.png) center / 19px 19px no-repeat;
+  width: 19px;
+  height: 19px;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+
+.game {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  color: #fff;
+}
+
+.game h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.game>div {
+  background-color: #28a745;
+}
+
+.start {
+  width: 50px;
+  height: 40px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+[class*="block"],
+.finish {
+  visibility: hidden;
+  margin-top: -20px;
+  text-align: center;
+}
+
+.start:hover+.block-10,
+.block-10:hover {
+  visibility: visible;
+}
+
+.block-10:hover+.block-20,
+.block-20:hover {
+  visibility: visible;
+}
+
+.block-20:hover+.block-30,
+.block-30:hover {
+  visibility: visible;
+}
+
+.block-30:hover+.block-40,
+.block-40:hover {
+  visibility: visible;
+}
+
+.block-40:hover+.block-50,
+.block-50:hover {
+  visibility: visible;
+}
+
+.block-50:hover+.block-60,
+.block-60:hover {
+  visibility: visible;
+}
+
+.block-60:hover+.block-70,
+.block-70:hover {
+  visibility: visible;
+}
+
+.block-70:hover+.block-80,
+.block-80:hover {
+  visibility: visible;
+}
+
+.block-80:hover+.block-90,
+.block-90:hover {
+  visibility: visible;
+}
+
+.block-90:hover+.finish,
+.finish:hover {
+  visibility: visible;
+}
+
+.game>.block-10 {
+  width: 20px;
+  height: 100px;
+  margin-left: 490px;
+}
+
+.block-20 {
+  width: 200px;
+  height: 20px;
+  margin-left: 490px;
+}
+
+.block-30 {
+  width: 20px;
+  height: 200px;
+  margin-left: 670px;
+}
+
+.block-40 {
+  width: 400px;
+  height: 20px;
+  margin-left: 290px;
+}
+
+.block-50 {
+  width: 20px;
+  height: 200px;
+  margin-left: 290px;
+}
+
+.block-60 {
+  width: 200px;
+  height: 20px;
+  margin-left: 290px;
+}
+
+.block-70 {
+  width: 20px;
+  height: 100px;
+  margin-left: 470px;
+}
+
+.block-80 {
+  width: 200px;
+  height: 20px;
+  margin-left: 470px;
+}
+
+.block-90 {
+  width: 20px;
+  height: 100px;
+  margin-left: 650px;
+}
+
+.finish {
+  width: 60px;
+  height: 40px;
+  margin-left: 630px;
+  padding: 10px;
+}
