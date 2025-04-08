@@ -34,8 +34,15 @@ body {
 }
 
 .wrapper {
-  /* overflow: clip; */
+  overflow: clip;
   min-height: 100%;
+  /* max-width: 1292px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px; */
+}
+
+.container {
   max-width: 1292px;
   width: 100%;
   margin: 0 auto;
@@ -142,14 +149,15 @@ body {
   margin-right: 20px;
 }
 
-.about {}
+.about {
+  font-size: 0;
+}
 
 .about-image {
   display: inline-block;
-  margin-left: -12px;
   width: 524px;
   height: 557px;
-  border-radius: 240px 100px 240px 100px;
+  border-radius: 45.8% 17.95% 45.8% 17.95%;
   overflow: clip;
   margin-right: 118px;
 }
@@ -165,18 +173,18 @@ body {
 .about-content h1 {
   font-size: 36px;
   font-weight: 700;
-  margin-bottom: 5px;
-  text-transform: uppercase;
-}
-
-.about-content h2 {
-  font-size: 36px;
-  font-weight: 300;
   margin-bottom: 42px;
   text-transform: uppercase;
 }
 
+.about-content h1 strong {
+  display: inline-block;
+  padding-top: 5px;
+  font-weight: 300;
+}
+
 .about-content p {
+  font-size: 16px;
   margin-bottom: 28px;
   line-height: 1.25;
 }
@@ -185,8 +193,9 @@ body {
   text-transform: uppercase;
   padding: 17px 40px;
   border-radius: 40px;
-  width: 100%;
-  max-width: 214px;
+  /* width: 100%; */
+  /* max-width: 214px;  */
+  /* дарма зроблено, не потрібне, ментор вказав на помилку*/
   font-size: 12px;
   font-weight: 700;
   color: #343045;
