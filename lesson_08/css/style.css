@@ -1,6 +1,7 @@
 /* Підключення фрифтів */
 
 /* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Gabriela:regular&display=swap);
 /* @import url("https://fonts.googleapis.com/css2?family=Carme&display=swap"); */
 /* Google Fonts (Plugin) */
 
@@ -22,8 +23,114 @@
   font-weight: bold;
   transition: background-color 0.3s, transform 0.3s;
 }
+
 .back-link:hover {
   background-color: #218838;
   transform: translateY(-2px);
 }
 
+body {
+  background-color: #45835b;
+  font-family: Gabriela;
+}
+
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+}
+
+.container {
+  min-width: 1440px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.page {}
+
+.logo p {
+  display: inline-block;
+}
+
+[class*="text"]:hover,
+.icon_location:hover,
+.icon_mail:hover,
+.icon_phone:hover {
+  color: #00cc2c;
+  text-shadow: #000 1px 1px;
+}
+
+.bg {}
+
+.bg-bg-01 {
+  width: 500px;
+  height: 200px;
+  background: url(../img/bg_01.avif) center / contain no-repeat;
+}
+
+
+.bg-bg-02 {
+  width: 500px;
+  height: 200px;
+  background: url(../img/bg_02.avif) center / contain no-repeat;
+}
+
+.bg-bg-03 {
+  width: 500px;
+  height: 300px;
+  background: url(../img/hero.avif) center / contain no-repeat;
+}
+
+[class*="bg-text"],
+[class*="bg-bg"] {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+[class*="bg-bg"] {
+  margin-right: 20px;
+}
+
+.icons>div {
+  margin-bottom: 20px;
+}
+
+.icons_text {
+  display: inline-block;
+}
+
+.icon_location::before,
+.icon_mail::before,
+.icon_phone::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+}
+
+.icon_location::before {
+  background: url(../img/icon_footer_location.svg) center no-repeat;
+}
+
+.icon_mail::before {
+  background: url(../img/icon_footer_mail.svg) center no-repeat;
+}
+
+.icon_phone::before {
+  background: url(../img/icon_footer_phone.svg) center no-repeat;
+}
+
+.content_images>div {
+  margin-bottom: 20px;
+}
+
+.content_images p {
+  display: inline-block;
+  padding-left: 20px;
+}
+
+.content_images>div:first-child img {
+  border-radius: 26.93% 0 26.93% 0 / 27.32% 0 27.32% 0;
+}
+
+.content_images>div:not(:first-child) img {
+  border-radius: 10px;
+}
