@@ -1,91 +1,114 @@
 <!DOCTYPE html>
 <html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Домашні роботи</title>
-    <style>
-      body {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #e5e5e5; /* Більш м'який сірий фон */
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        color: #333;
-      }
-      .container {
-        text-align: center;
-        background-color: #ffffff;
-        border-radius: 12px;
-        padding: 40px;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        width: 80%;
-        max-width: 600px;
-      }
-      h1 {
-        font-size: 36px;
-        color: #2d6a4f; /* Теплий зелений відтінок */
-        margin-bottom: 30px;
-        font-weight: 600;
-      }
-      ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-      }
-      li {
-        margin: 15px 0;
-      }
-      a {
-        text-decoration: none;
-        color: #2d6a4f; /* Зелений відтінок */
-        font-size: 20px;
-        transition: color 0.3s ease, transform 0.3s ease;
-        display: inline-block;
-        padding: 10px 20px;
-        border-radius: 5px;
-        background-color: #f7f7f7; /* Світло-сірий фон для кнопок */
-      }
-      a:hover {
-        color: #ffffff;
-        background-color: #2d6a4f; /* Той самий зелений колір при наведенні */
-        transform: translateY(-3px);
-      }
-      .back-link {
-        display: inline-block;
-        margin-top: 30px;
-        padding: 12px 25px;
-        background-color: #4caf50; /* Трохи яскравіший зелений для кнопки "На головну" */
-        color: white;
-        border-radius: 8px;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 18px;
-        transition: background-color 0.3s, transform 0.3s;
-      }
-      .back-link:hover {
-        background-color: #388e3c; /* Темно-зелений при наведенні */
-        transform: translateY(-3px);
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Оберіть домашню роботу</h1>
-      <ul>
-        <li><a href="lesson_02/index.html">Урок 2</a></li>
-        <li><a href="lesson_03/index.html">Урок 3</a></li>
-        <li><a href="lesson_04/index.html">Урок 4</a></li>
-        <li><a href="lesson_05/index.html">Урок 5</a></li>
-        <li><a href="lesson_06/index.html">Урок 6</a></li>
-        <li><a href="lesson_07/index.html">Урок 7</a></li>
-        <li><a href="lesson_08/index.html">Урок 8</a></li>
-        <li><a href="lesson_09/index.html">Урок 9</a></li>
-        <li><a href="lesson_10/index.html">Урок 10</a></li>
-      </ul>
-    </div>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Домашні роботи</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #e5e5e5;
+      /* Більш м'який сірий фон */
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #333;
+    }
+
+    .container {
+      text-align: center;
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      width: 80%;
+      max-width: 600px;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: #2d6a4f;
+      /* Теплий зелений відтінок */
+      margin-bottom: 30px;
+      font-weight: 600;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      margin: 15px 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: #2d6a4f;
+      /* Зелений відтінок */
+      font-size: 20px;
+      transition: color 0.3s ease, transform 0.3s ease;
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 5px;
+      background-color: #f7f7f7;
+      /* Світло-сірий фон для кнопок */
+    }
+
+    a:hover {
+      color: #ffffff;
+      background-color: #2d6a4f;
+      /* Той самий зелений колір при наведенні */
+      transform: translateY(-3px);
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 25px;
+      background-color: #4caf50;
+      /* Трохи яскравіший зелений для кнопки "На головну" */
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .back-link:hover {
+      background-color: #388e3c;
+      /* Темно-зелений при наведенні */
+      transform: translateY(-3px);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Оберіть домашню роботу</h1>
+    <ul>
+      <li><a href="lesson_02/index.html">Урок 2</a></li>
+      <li><a href="lesson_03/index.html">Урок 3</a></li>
+      <li><a href="lesson_04/index.html">Урок 4</a></li>
+      <li><a href="lesson_05/index.html">Урок 5</a></li>
+      <li><a href="lesson_06/index.html">Урок 6</a></li>
+      <li><a href="lesson_07/index.html">Урок 7</a></li>
+      <li><a href="lesson_08/index.html">Урок 8</a></li>
+      <li><a href="lesson_09/index.html">Урок 9</a></li>
+      <li><a href="lesson_10/index.html">Урок 10</a></li>
+      <li><a href="lesson_11/index.html">Урок 11</a></li>
+      <li><a href="lesson_12/index.html">Урок 12</a></li>
+      <li><a href="lesson_13/index.html">Урок 13</a></li>
+      <li><a href="lesson_14/index.html">Урок 14</a></li>
+      <li><a href="lesson_15/index.html">Урок 15</a></li>
+    </ul>
+  </div>
+</body>
+
 </html>
