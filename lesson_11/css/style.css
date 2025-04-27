@@ -22,8 +22,17 @@
   font-weight: bold;
   transition: background-color 0.3s, transform 0.3s;
 }
+
 .back-link:hover {
   background-color: #218838;
   transform: translateY(-2px);
 }
 
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+}
+
+.header {
+  margin-bottom: 20px;
+}
