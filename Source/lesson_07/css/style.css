@@ -70,9 +70,9 @@ body {
 	/* ... */
 }
 
-.block {}
+.property {}
 
-.block__inner {
+.property__inner {
 	background-color: #7a956b;
 	width: 100px;
 	height: 100px;
@@ -80,12 +80,12 @@ body {
 }
 
 /* Непрацює */
-.block__inner:hover {
+.property__inner:hover {
 	visibility: visible;
 }
 
 /* Працює */
-.block:hover .block__inner {
+.property:hover .property__inner {
 	visibility: visible;
 }
 
@@ -150,7 +150,7 @@ body {
 "ефекту від посилання з іншого об'єкту"
 */
 
-.block__inner:target {
+.property__inner:target {
 	visibility: visible;
 }
 
@@ -315,32 +315,32 @@ body {
 }*/
 
 /* Гарна практика */
-.some-block {
+.some-property {
 	background-color: #7a956b;
 	padding: 15px;
 }
 
-.some-block>* {
+.some-property>* {
 	margin-bottom: 15px;
 }
 
-.some-block h1 {}
+.some-property h1 {}
 
-.some-block div {
+.some-property div {
 	margin-bottom: 20px;
 }
 
-.some-block div p:not(:last-child) {
+.some-property div p:not(:last-child) {
 	margin-bottom: 5px;
 }
 
-.some-block img {}
+.some-property img {}
 
-.some-block a:hover {
+.some-property a:hover {
 	text-decoration: underline;
 }
 
-.some-block>*:last-child {
+.some-property>*:last-child {
 	margin-bottom: 0;
 }
 
@@ -368,7 +368,7 @@ body {
 ::after{}
 
 !!!!! Псевдоелементи - рядкові (але в reset 
-доданий display: inline-block;) !!!!!
+доданий display: inline-property;) !!!!!
 Властивість content: ""; - Обов'язкова!
 */
 /*
@@ -439,14 +439,14 @@ body {
 
 /*
 .title {
-	display: inline-block;
+	display: inline-property;
 }
 .title::after {
 	content: "";
 	height: 1px;
 	width: 60%;
 	background-color: #7a956b;
-	display: block;
+	display: property;
 	margin-top: 3px;
 }
 */

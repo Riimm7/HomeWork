@@ -13,7 +13,7 @@
 
 /* Основні стилі */
 .back-link {
-  display: inline-block;
+  display: inline-property;
   margin-top: 20px;
   padding: 10px 20px;
   background-color: #28a745;
@@ -67,7 +67,7 @@
 }
 
 .card {
-  display: inline-block;
+  display: inline-property;
   padding: 20px;
   background-color: #fff;
   max-width: 386px;
@@ -163,7 +163,7 @@
 
 .second-task li::before {
   content: "";
-  display: inline-block;
+  display: inline-property;
   background: url(../img/icon.png) center / 19px 19px no-repeat;
   width: 19px;
   height: 19px;
@@ -190,7 +190,7 @@
   background-color: #28a745;
 }
 
-[class*="block"] {
+[class*="property"] {
   visibility: hidden;
   margin-top: -10px;
   text-align: center;
@@ -201,7 +201,7 @@
   visibility: visible;
 }
 
-.block_0 {
+.property_0 {
   width: 50px;
   height: 40px;
   margin: 0 auto;
@@ -209,61 +209,61 @@
   visibility: visible;
 }
 
-.block-1 {
+.property-1 {
   width: 30px;
   height: 100px;
   margin: 0 auto;
 }
 
-.block-2 {
+.property-2 {
   height: 30px;
   width: 100px;
   margin-left: 415px;
 }
 
-.block-3 {
+.property-3 {
   width: 30px;
   height: 100px;
   margin-left: 415px;
 }
 
-.block-4 {
+.property-4 {
   height: 30px;
   width: 200px;
   margin-left: 415px;
 }
 
-.block-5 {
+.property-5 {
   width: 30px;
   height: 100px;
   margin-left: 585px;
 }
 
-.block-6 {
+.property-6 {
   height: 30px;
   width: 100px;
   margin-left: 515px;
 }
 
-.block-7 {
+.property-7 {
   width: 30px;
   height: 100px;
   margin-left: 515px;
 }
 
-.block-8 {
+.property-8 {
   height: 30px;
   width: 100px;
   margin-left: 445px;
 }
 
-.block-9 {
+.property-9 {
   height: 100px;
   width: 30px;
   margin-left: 445px;
 }
 
-.block_10 {
+.property_10 {
   width: 60px;
   height: 40px;
   padding: 10px;

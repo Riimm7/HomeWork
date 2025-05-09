@@ -14,7 +14,7 @@
 
 /* Основні стилі */
 .back-link {
-  display: inline-block;
+  display: inline-property;
   margin-top: 20px;
   padding: 10px 20px;
   background-color: #28a745;
@@ -215,7 +215,7 @@
 
 .item-business__image,
 .item-business__content {
-  display: inline-block;
+  display: inline-property;
   vertical-align: top;
   font-size: initial;
 }

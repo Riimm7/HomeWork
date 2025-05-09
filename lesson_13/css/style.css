@@ -12,7 +12,7 @@
 
 /* Основні стилі */
 .back-link {
-  display: inline-block;
+  display: inline-property;
   margin-top: 20px;
   padding: 10px 20px;
   background-color: #28a745;
@@ -22,8 +22,8 @@
   font-weight: bold;
   transition: background-color 0.3s, transform 0.3s;
 }
+
 .back-link:hover {
   background-color: #218838;
   transform: translateY(-2px);
 }
-

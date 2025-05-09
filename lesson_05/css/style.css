@@ -22,7 +22,7 @@
 }
 
 .back-link {
-  display: inline-block;
+  display: inline-property;
   margin-top: 20px;
   padding: 10px 20px;
   background-color: #28a745;
@@ -78,7 +78,7 @@
 }
 
 .card {
-  display: inline-block;
+  display: inline-property;
   vertical-align: top;
   max-width: 230px;
   width: 100%;

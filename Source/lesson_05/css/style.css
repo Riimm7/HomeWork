@@ -20,13 +20,15 @@ body {
 /* --------------- CSS-властивості блоків ----------------- */
 /* ======================================================== */
 
-.block {
+.property {
 	background-color: #77608d;
 }
+
 .inline {
 	background-color: #7a956b;
 }
-.inline-block {
+
+.inline-property {
 	background-color: #794f45;
 }
 
@@ -64,11 +66,11 @@ padding-left: значення;
 /* Логічні властивості */
 
 /* Задає однакові логічні блочні відступи на початку та вкінці */
-/* padding-block: ; */
+/* padding-property: ; */
 /* Задає однакові логічні рядкові відступи зліва та справа */
 /* padding-inline: ; */
 
-/* padding-block: 20px; */
+/* padding-property: 20px; */
 /* = */
 /* padding: 20px 0px; */
 /* або */
@@ -78,7 +80,7 @@ padding-left: значення;
 /* padding-bottom: 20px; */
 
 /* Різні значення  */
-/* padding-block: 10px 50px; */
+/* padding-property: 10px 50px; */
 
 /* padding-inline: 20px; */
 /* = */
@@ -101,13 +103,13 @@ padding-left: значення;
 	Задає внутрішній логічний блочний
 	відступ на початку елменту 
 	*/
-/* padding-block-start: 20px; */
+/* padding-property-start: 20px; */
 
 /* 
 	Задає внутрішній логічний блочний 
 	відступ в кінці елменту 
 	*/
-/* padding-block-end: 30px; */
+/* padding-property-end: 30px; */
 
 /* 
 	Задає внутрішній логічний рядковий
@@ -132,7 +134,7 @@ padding-left: значення;
 	writing-mode: vertical-rl;
 */
 
-.block {
+.property {
 	/* padding: 20px; */
 	/* padding: 20px 50px; */
 	/* padding: 20px 50px 30px; */
@@ -168,7 +170,7 @@ padding-left: значення;
 	padding-bottom: 20px;*/
 }
 
-.inline-block {
+.inline-property {
 	/* padding: 20px; */
 }
 
@@ -196,11 +198,11 @@ margin-left: значення;
 /*  логічні властивості */
 
 /* Задає однакові логічні блочні відступи на початку та вкінці */
-/* margin-block: ; */
+/* margin-property: ; */
 /* Задає однакові логічні рядкові відступи зліва та справа */
 /* margin-inline: ; */
 
-/* margin-block: 20px; */
+/* margin-property: 20px; */
 /* = */
 /* margin: 20px 0px; */
 /* або */
@@ -210,7 +212,7 @@ margin-left: значення;
 /* margin-bottom: 20px; */
 
 /* Різні значення  */
-/* margin-block: 10px 50px; */
+/* margin-property: 10px 50px; */
 
 /* margin-inline: 20px; */
 /* = */
@@ -233,13 +235,13 @@ margin-left: значення;
 	Задає завнішній логічний блочний
 	відступ на початку елменту 
 	*/
-/* margin-block-start: 20px; */
+/* margin-property-start: 20px; */
 
 /* 
 	Задає завнішній логічний блочний 
 	відступ в кінці елменту 
 	*/
-/* margin-block-end: 30px; */
+/* margin-property-end: 30px; */
 
 /* 
 	Задає завнішній логічний рядковий
@@ -264,7 +266,7 @@ margin-left: значення;
 	writing-mode: vertical-rl;
 	*/
 
-.block {
+.property {
 	/* margin: 50px; */
 	/* margin-top: -20px; */
 	/* margin-left: -50px; */
@@ -285,10 +287,10 @@ margin-left: значення;
 та зверху вниз
 */
 /*
-.block {
+.property {
 	margin-bottom: 50px;
 }
-.block-2 {
+.property-2 {
 	background-color: #794f45;
 	margin-bottom: 20px;
 }
@@ -301,7 +303,8 @@ margin-left: значення;
 	margin-right: 50px;
 	*/
 }
-.inline-block {
+
+.inline-property {
 	/*
 	margin-top: 10px;
 	margin-bottom: 50px;
@@ -318,12 +321,13 @@ margin-left: значення;
 	2) для якого об'єкту треба задати відступ?
 */
 
-.block {
+.property {
 	/* padding: 20px; */
-	/* Відступ саме між об'єктом .block та оточенням */
+	/* Відступ саме між об'єктом .property та оточенням */
 	/* margin-bottom: 50px; */
 }
-.block p {
+
+.property p {
 	/* padding: 15px; */
 	/* Відступ саме між об'єктами p та оточенням */
 	/* margin-bottom: 30px; */
@@ -357,7 +361,7 @@ margin-left: значення;
 	% береться від ширини батьківського об'єкту
 */
 /*
-.block {
+.property {
 	width: 150px;
 }
 */
@@ -367,11 +371,11 @@ margin-left: значення;
 }
 	*/
 
-.inline-block {
+.inline-property {
 	width: 200px;
 }
 
-.block {
+.property {
 	/*
 	max-width: 600px;
 	min-width: 300px;
@@ -402,7 +406,7 @@ max-height
 НЕ працює зі рядковими об'єктами
 */
 
-.block {
+.property {
 	/* height: 200px; */
 	/* max-height: 50px; */
 	/* min-height: 100px; */
@@ -413,22 +417,22 @@ max-height
 /* Задає логічний рядкорий розмір об'єкту */
 /* inline-size: ; */
 /* Задає логічний блочний розмір об'єкту */
-/* block-size: ; */
+/* property-size: ; */
 
 /*
 	inline-size: 200px;
-	block-size: 150px;
+	property-size: 150px;
 
 	мінімальні та максимальні обмеження
 
 	max-inline-size
-	max-block-size
+	max-property-size
 
 	min-inline-size
-	min-block-sizes
+	min-property-sizes
 	*/
 
-.block {
+.property {
 	/*
 	width: 300px;
 	writing-mode: vertical-rl;
@@ -448,7 +452,7 @@ content-box - (за замовченням) додає відступи
 border-box - значення розмірів враховують відступи
 */
 /*
-.block {
+.property {
 	border-left: 10px solid #000;
 	margin-left: 50px;
 	padding-left: 50px;
@@ -472,7 +476,7 @@ border-box - значення розмірів враховують відсту
 	Тільки горизонталь
 	overflow-x: ;
 */
-.block {
+.property {
 	/* white-space: nowrap; */
 	/* height: 50px; */
 	/* overflow: scroll; */
@@ -489,7 +493,7 @@ middle
 bottom
 */
 
-.inline-block {
+.inline-property {
 	/* vertical-align: bottom; */
 }
 
@@ -498,11 +502,11 @@ bottom
 	Багатоцільова властивість яка задає 
 	глобальні параметри тега. 
 	Властивість не успадковується
-	block - (за замовченням для блочних об'ектів) 
+	property - (за замовченням для блочних об'ектів) 
 	Елемент відображається як блочний.
 	inline - (за замовченням для рядкових об'ектів)  
 	Елемент відображається як рядковий.
-	inline-block - (блочно-рядковий) 
+	inline-property - (блочно-рядковий) 
 	Елемент відображається як 
 	рядковий але з можливістю 
 	використання усіх CSS-властивостей.
@@ -511,15 +515,17 @@ bottom
 	Не приймає участь у обробці браузером.
 */
 
-.block {
-	/* display: block; (за замовченням) */
+.property {
+	/* display: property; (за замовченням) */
 }
+
 .inline {
 	/* display: inline; (за замовченням) */
 }
-.inline-block {
-	/* display: inline-block; (за замовченням) */
-	/* display: block; */
+
+.inline-property {
+	/* display: inline-property; (за замовченням) */
+	/* display: property; */
 	/* 
 	Нічого не змінює 
 	display: inline;
@@ -534,7 +540,7 @@ bottom
 3) Додаємо margin: 0 auto;
 */
 
-.block {
+.property {
 	/* text-align: center; */
 	/* max-width: 400px; */
 	/* margin: 0 auto; */
@@ -548,19 +554,22 @@ bottom
 	overflow: hidden;
 	background-color: #794f45;
 }
+
 .items {
 	margin-left: -5px;
 	margin-right: -5px;
 	font-size: 0;
 }
+
 .item {
 	width: 33.333%;
-	display: inline-block;
+	display: inline-property;
 	margin-bottom: 10px;
 	padding-left: 5px;
 	padding-right: 5px;
 	vertical-align: top;
 }
+
 .content {
 	font-size: 18px;
 	background-color: #7a956b;

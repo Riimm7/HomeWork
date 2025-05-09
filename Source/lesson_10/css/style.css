@@ -19,6 +19,7 @@ body {
 	background-color: #333;
 	color: #fff;
 }
+
 .wrapper {
 	overflow: clip;
 	min-height: 100%;
@@ -34,26 +35,32 @@ body {
 .page {
 	padding: 30px;
 }
+
 /* ------------------------------------------------------------------- */
 
-.blocks {
-}
-.blocks--margin {
+.propertys {}
+
+.propertys--margin {
 	margin-bottom: 30px;
 }
-.blocks__item {
+
+.propertys__item {
 	text-align: center;
 	padding: 15px;
 }
-.blocks__item--brown {
+
+.propertys__item--brown {
 	background-color: #794f45;
 }
-.blocks__item--puprule {
+
+.propertys__item--puprule {
 	background-color: #77608d;
 }
-.blocks__item--green {
+
+.propertys__item--green {
 	background-color: #7a956b;
 }
+
 /* ------------------------------------------------------------------- */
 
 /*
@@ -131,10 +138,11 @@ relative - відносне позиціонування.
 без вказання висоти для батьківського елементу
 
 */
-.blocks {
+.propertys {
 	/* height: 138px; */
 }
-.blocks__item--puprule {
+
+.propertys__item--puprule {
 	/* position: relative; */
 	/* top: 20px;
 	left: 30px; */
@@ -144,8 +152,9 @@ relative - відносне позиціонування.
 	top: 20%;
 	*/
 }
+
 /*
-.blocks__item--green {
+.propertys__item--green {
 	position: relative;
 	z-index: 2;
 }
@@ -154,8 +163,8 @@ relative - відносне позиціонування.
 /* z-index та батьківськи елементи */
 
 /* Елемент статичний (не приймає участь в батлі) */
-.section-1 {
-}
+.section-1 {}
+
 /* Елемент "виграє" (z-index: 3;) */
 .section-1__item {
 	padding: 20px;
@@ -171,6 +180,7 @@ relative - відносне позиціонування.
 	position: relative;
 	z-index: 2;
 }
+
 /* 
 Дочірній елемент "програвшего" батьківськго 
 вже не може бути ближчим (перемогти)
@@ -197,10 +207,11 @@ absolute - абсолютне позиціонування.
 по вертикалі,використовуючи відсотки, відсоток 
 буде братись від висоти батьківського елементу
 */
-.blocks {
+.propertys {
 	/* position: relative; */
 }
-.blocks__item--puprule {
+
+.propertys__item--puprule {
 	/* position: absolute; */
 	/*
 	top: 10%;
@@ -222,7 +233,7 @@ fixed - фіксоване позіціанування
 4) Не приймає участі у скролі.
 5) (спірне питання) Не можемо вказувати для БЕМ-блоків 
 */
-.blocks__item--puprule {
+.propertys__item--puprule {
 	/*
 	position: fixed;
 	left: 0px;
@@ -245,7 +256,7 @@ fixed та прилипає до зазначеної позиції top bottom 
 overflow: hidden;
 */
 /*
-.blocks__item {
+.propertys__item {
 	position: sticky;
 	top: 0px;
 }
@@ -279,13 +290,16 @@ overflow: hidden;
 .menu {
 	background-color: #7a956b;
 }
+
 .menu__item {
-	display: inline-block;
+	display: inline-property;
 	position: relative;
 }
+
 .menu__item:hover .menu__link {
 	background-color: #77608d;
 }
+
 .menu__item:hover .sub-menu {
 	opacity: 1;
 	visibility: visible;
@@ -294,10 +308,12 @@ overflow: hidden;
 .menu__item:not(:last-child) {
 	margin-right: 5px;
 }
+
 .menu__link {
 	padding: 20px;
 	font-size: 20px;
 }
+
 .menu__sub-menu {
 	position: absolute;
 	left: 0;
@@ -305,15 +321,19 @@ overflow: hidden;
 	opacity: 0;
 	visibility: hidden;
 }
+
 .sub-menu {
 	padding-top: 10px;
 }
+
 .sub-menu__item {
 	background-color: #77608d;
 }
+
 .sub-menu__item:first-child {
 	padding-top: 10px;
 }
+
 .sub-menu__item:last-child {
 	padding-bottom: 10px;
 }
@@ -322,6 +342,7 @@ overflow: hidden;
 	width: 100%;
 	padding: 10px 20px;
 }
+
 .sub-menu__link:hover {
 	background-color: #7a956b;
 }

@@ -36,3 +36,103 @@
 .header {
   margin-bottom: 20px;
 }
+
+.first-task {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.title {
+  padding: 30px 0;
+  font-weight: bold;
+}
+
+.property {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.property__base {
+  width: 100%;
+  height: 100%;
+  background-color: #b9ff91;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.property__hover {
+  width: 100%;
+  height: 100%;
+  background-color: #23be7e;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  transition: all 0.5s ease;
+}
+
+.property--perspective,
+.property--backface {
+  perspective: 600px;
+}
+
+.property__hover--translate:hover {
+  transform: translate(20px, -20px);
+}
+
+.property__hover--scale:hover {
+  transform: scale(0.8, 0.8);
+}
+
+.property__hover--rotate:hover {
+  transform: rotate(270deg);
+}
+
+.property__hover--skew:hover {
+  transform: skew(40deg, 40deg);
+}
+
+.property__hover--matrix:hover {
+  transform: matrix(1, 0.2, 0.5, 1, 30, -20);
+}
+
+.property__hover--origin:hover {
+  transform: rotate(90deg);
+  transform-origin: bottom right;
+}
+
+.property__hover--perspective:hover {
+  transform: rotateX(45deg);
+  transform-style: preserve-3d;
+}
+
+.property__hover--translate3d:hover {
+  transform: translate3d(20px, -20px, 50px);
+}
+
+.property__hover--scale3d:hover {
+  transform: scale3d(1.2, 1.2, 1.2);
+}
+
+.property__hover--rotate3d:hover {
+  transform: rotate3d(1, 1, 0, 45deg);
+}
+
+.property__hover--matrix3d:hover {
+  transform: matrix3d(1, 0, 0, 0,
+      0, 1, 0, 0,
+      0, 0, 1, 0,
+      30, -20, 50, 1);
+}
+
+.property__hover--backface {
+  backface-visibility: hidden;
+}
+
+.property__hover--backface:hover {
+  transform: rotateY(180deg);
+}

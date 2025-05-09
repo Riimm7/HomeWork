@@ -13,7 +13,7 @@
 
 /* Основні стилі */
 .back-link {
-  display: inline-block;
+  display: inline-property;
   margin-top: 20px;
   padding: 10px 20px;
   background-color: #28a745;
@@ -102,7 +102,7 @@ body {
 .information-item,
 .information-text,
 .line {
-  display: inline-block;
+  display: inline-property;
   vertical-align: middle;
 }
 
@@ -154,7 +154,7 @@ body {
 }
 
 .about-image {
-  display: inline-block;
+  display: inline-property;
   width: 524px;
   height: 557px;
   border-radius: 45.8% 17.95% 45.8% 17.95%;
@@ -164,7 +164,7 @@ body {
 
 .about-content {
   vertical-align: top;
-  display: inline-block;
+  display: inline-property;
   max-width: 630px;
   width: 100%;
   padding-top: 50px;
@@ -178,7 +178,7 @@ body {
 }
 
 .about-content h1 strong {
-  display: inline-block;
+  display: inline-property;
   padding-top: 5px;
   font-weight: 300;
 }

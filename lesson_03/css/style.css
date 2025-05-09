@@ -1,7 +1,7 @@
 @import url(reset.css);
 
 .back-link {
-  display: inline-block;
+  display: inline-property;
   margin-top: 20px;
   padding: 10px 20px;
   background-color: #28a745;
@@ -11,6 +11,7 @@
   font-weight: bold;
   transition: background-color 0.3s, transform 0.3s;
 }
+
 .back-link:hover {
   background-color: #218838;
   transform: translateY(-2px);
@@ -23,46 +24,59 @@ header {
 .hw-03 li {
   color: red;
 }
-.hw-03 ul li + li {
+
+.hw-03 ul li+li {
   color: green;
 }
-.hw-03 ul li > ul li {
+
+.hw-03 ul li>ul li {
   color: blue;
 }
-.hw-03 ul li > ul > li + li {
+
+.hw-03 ul li>ul>li+li {
   color: orange;
 }
-.hw-03 ul li > ul li > ol > li {
+
+.hw-03 ul li>ul li>ol>li {
   color: #4597f7;
 }
-.hw-03 ul li > ul li > ol > li + li {
+
+.hw-03 ul li>ul li>ol>li+li {
   color: #5d5d5d;
 }
-.hw-03 ul > li > ul > li > span {
+
+.hw-03 ul>li>ul>li>span {
   color: #a0f0fc;
 }
 
 h1 {
   color: crimson;
 }
-h1 + p {
+
+h1+p {
   color: rgb(90, 90, 90);
 }
+
 #intro {
   color: gold;
 }
+
 [class*="ing"] {
   color: purple;
 }
+
 h2 {
   color: red;
 }
+
 h2.modification {
   color: darkviolet;
 }
+
 .main .before-after {
   color: orangered;
 }
+
 footer * {
   color: lime;
 }

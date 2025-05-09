@@ -19,6 +19,7 @@ body {
 	background-repeat: repeat;
 	*/
 }
+
 .wrapper {
 	overflow: clip;
 	min-height: 100%;
@@ -39,17 +40,20 @@ body {
 /* ----------- CSS-властивості оформлення блоків ---------- */
 /* ======================================================== */
 
-.block {
+.property {
 	/* padding: 20px; */
 	margin-bottom: 20px;
 	/* background-color: #77608d; */
 }
+
 .inline {
 	background-color: #7a956b;
 }
-.inline-block {
+
+.inline-property {
 	background-color: #794f45;
 }
+
 /* ======================================================== */
 
 /*
@@ -65,16 +69,16 @@ transparent - прозорий колір
 /* Level 2 */
 /*
 border-inline - задає межу зліва та справа
-border-block - задає межу зверху та знизу
+border-property - задає межу зверху та знизу
 
 border-inline-start
 border-inline-end
 
-border-block-start
-border-block-end
+border-property-start
+border-property-end
 */
 
-.block {
+.property {
 	/* border: 20px solid transparent; */
 	/* border: 10px solid #000; */
 	/*
@@ -97,7 +101,7 @@ border-block-end
 
 	/* Логічні властивості */
 	/*
-	border-block: 2px solid red;
+	border-property: 2px solid red;
 	border-inline: 20px solid red;
 	writing-mode: vertical-rl;
 	*/
@@ -105,10 +109,10 @@ border-block-end
 
 /* Приклад */
 /*
-.block {
+.property {
 	border: 20px solid #000;
 }
-.block:hover {
+.property:hover {
 	border-color: transparent;
 }
 */
@@ -117,7 +121,8 @@ border-block-end
 	/* border: 5px solid #000; */
 	/* line-height: 2; */
 }
-.inline-block {
+
+.inline-property {
 	/* border: 20px solid yellow; */
 }
 
@@ -142,10 +147,11 @@ outline-offset - відстань від об'єкта до обводки
 	outline-offset: ;
 */
 
-.block {
+.property {
 	/* outline: 5px solid yellow; */
 	/* outline-offset: 10px; */
 }
+
 .link:focus {
 	/* outline: 3px dotted red; */
 }
@@ -156,7 +162,7 @@ border-radius
 Властивість не успадковується
 */
 
-.block {
+.property {
 	/* padding: 20px; */
 	/* border-radius: 20px; */
 
@@ -182,7 +188,7 @@ box-shadow: зсув_по_гориз зсув_по_верт радіус(роз�
 inset - тінь в середені об'єкту
 */
 
-.block {
+.property {
 	/* padding: 20px; */
 	/* border-radius: 20px; */
 	/* margin-bottom: 20px; */
@@ -196,6 +202,7 @@ inset - тінь в середені об'єкту
 		5px 5px 5px 50px green;
 		*/
 }
+
 /*
 .button {
 	padding: 15px;
@@ -232,7 +239,7 @@ opacity
 0.5 - прозорість 50%
 */
 /*
-.block {
+.property {
 	opacity: 0;
 }
 */
@@ -243,22 +250,22 @@ visible - (за замовченням) відображає об'єкт
 hidden - ховає об'єкт (з об'єктом не можна взаємодіяти)
 */
 
-.block {
+.property {
 	/* visibility: visible; */
 	/* visibility: hidden; */
 }
 
-.block {
+.property {
 	/* display: none; */
 }
 
 /*
-.block {
+.property {
 	opacity: 0;
 	visibility: hidden;
 	transition: all 0.3s;
 }
-.page:hover .block {
+.page:hover .property {
 	opacity: 1;
 	visibility: visible;
 }
@@ -268,7 +275,7 @@ hidden - ховає об'єкт (з об'єктом не можна взаємо
 /* -----Властивість background-------- */
 /* ----------------------------------- */
 
-.block {
+.property {
 	padding: 20px;
 
 	/* Окремі властивості */
@@ -446,8 +453,8 @@ hidden - ховає об'єкт (з об'єктом не можна взаємо
 	border-top: 100px solid green;
 }
 */
-.list {
-}
+.list {}
+
 .item {
 	margin-bottom: 10px;
 	padding-left: 35px;
