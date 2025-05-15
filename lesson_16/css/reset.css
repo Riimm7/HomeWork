@@ -10,12 +10,12 @@
 
 *::before,
 *::after {
-	display: inline-property;
+	display: inline-block;
 }
 
 a {
 	text-decoration: none;
-	display: inline-property;
+	display: inline-block;
 	color: inherit;
 }
 
