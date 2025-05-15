@@ -136,3 +136,502 @@
 .property__hover--backface:hover {
   transform: rotateY(180deg);
 }
+
+.second-task {
+  position: relative;
+  /* overflow: clip; */
+  max-width: 1440px;
+  min-height: 1024px;
+  margin: 0 auto;
+}
+
+.sky {
+  position: relative;
+  width: 100%;
+  height: 533px;
+  background: #A3CEED;
+}
+
+.sky__sun {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #E4C489;
+  filter: blur(10px);
+  position: relative;
+  top: 84px;
+  left: 684px;
+}
+
+.sky__cloud:nth-child(2) {
+  top: 75px;
+  left: 288px;
+}
+
+.sky__cloud:nth-child(3) {
+  top: 150px;
+  left: 926px;
+}
+
+.sky__cloud:nth-child(4) {
+  top: 50px;
+  left: 1150px;
+}
+
+.sky__cloud:nth-child(5) {
+  top: 0;
+  left: -17px;
+}
+
+.cloud {
+  position: relative;
+  filter: blur(7px);
+}
+
+.cloud__item {
+  position: absolute;
+}
+
+.cloud__item:nth-child(1) {
+  top: 31px;
+}
+
+.cloud__item:nth-child(2) {
+  left: 42px;
+  top: 65px;
+}
+
+.cloud__item:nth-child(3) {
+  left: 106px;
+}
+
+.cloud__item:nth-child(4) {
+  left: 43px;
+}
+
+.cloud__item:nth-child(5) {
+  left: 106px;
+  top: 51px;
+}
+
+.cloud__item:nth-child(6) {
+  left: 157px;
+  top: 31px;
+}
+
+.cloud__item {
+  width: 85px;
+  height: 85px;
+  background: #D8EFF5;
+  border: 1px solid #B3C6D5;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.landscape {
+  width: 100%;
+  height: 147px;
+  background: #E9B367;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.plants>div,
+.plants div>div,
+.plants img {
+  position: absolute;
+}
+
+.tumbleweed {
+  width: 50px;
+  height: 50px;
+  top: 80px;
+  left: 500px;
+}
+
+.cactus--mid {
+  left: 270px;
+  top: -30px;
+}
+
+.cactus--right {
+  top: -50px;
+  right: 400px;
+}
+
+.cactus--left {
+  top: 0;
+  left: 0;
+}
+
+.cactus__big {
+  width: 162px;
+  height: 192px;
+  left: 57px;
+  top: -100px;
+}
+
+.cactus__small {
+  width: 81px;
+  height: 86px;
+  top: -50px;
+  left: 320px;
+}
+
+.rocks {
+  position: relative;
+}
+
+.rock-group {
+  position: absolute;
+}
+
+.rock-group--middle {
+  top: -33px;
+  left: 828px;
+}
+
+.rock-group--left {
+  left: 590px;
+  top: 20px;
+}
+
+.rock-group--right {
+  left: 1300px;
+  top: -10px;
+}
+
+.rock {
+  position: absolute;
+  border-radius: 48px 48px 30px 10px;
+  background: #E1A859;
+  border: 1px solid #AD7A32;
+}
+
+.rock--large {
+  width: 77px;
+  height: 47px;
+}
+
+.rock--mid {
+  width: 37px;
+  height: 23px;
+  left: 11px;
+  top: 32px;
+}
+
+.rock--small {
+  width: 19px;
+  height: 16px;
+  left: 48px;
+  top: 35px;
+}
+
+.highway {
+  position: relative;
+  width: 100%;
+  height: 344px;
+  background: #343333;
+}
+
+.highway *:not(:last-child) {
+  margin-right: 120px;
+}
+
+.highway *:first-child {
+  position: absolute;
+  left: -300px;
+  color: #000;
+}
+
+.highway__markup {
+  display: inline-block;
+  width: 150px;
+  height: 15px;
+  background: #fff;
+  position: relative;
+  top: 150px;
+}
+
+
+.car * {
+  background-color: #D72130;
+  position: absolute;
+}
+
+.car {
+  position: absolute;
+  width: 616px;
+  height: 235px;
+  left: 550px;
+  top: 634px;
+}
+
+.car__body {
+  width: 517px;
+  height: 230px;
+  border-radius: 523px 523px 0 0;
+  bottom: 5px;
+  left: 73px;
+}
+
+.car__body--bottom {
+  width: 616px;
+  height: 79px;
+  border-radius: 37px 64px 80px 110px;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.car__hood {
+  width: 192px;
+  height: 123px;
+  border-radius: 484px 523px 175px 340px;
+  transform: rotate(-30deg);
+  border: 1px solid #000;
+  bottom: 25px;
+  left: 0;
+}
+
+.car__fender {
+  width: 197px;
+  height: 121px;
+  border-radius: 523px 523px 70px 70px;
+  border: 1px solid #000;
+  z-index: 6;
+}
+
+.car__fender--bottom {
+  width: 137px;
+  height: 84px;
+  border-radius: 523px 523px 20px 20px;
+  background: #000;
+  bottom: 0;
+  left: 30px;
+}
+
+.car__fender--front {
+  bottom: 0;
+  left: 24px;
+}
+
+.car__fender--rear {
+  right: -7px;
+  bottom: 0;
+}
+
+.windshield {
+  transform: perspective(200px);
+}
+
+.windshield__body {
+  width: 30px;
+  height: 80px;
+  border-radius: 30px 30px 50px 0px;
+  background: #000;
+  transform: rotate3d(0, 0.5, 1, 60deg);
+  top: 16px;
+  left: 160px;
+}
+
+
+.car__rear-window {
+  width: 26px;
+  height: 94px;
+  border-radius: 10px 120px 120px 10px;
+  background: #000;
+  transform: rotate(-48deg);
+  top: 22px;
+  left: 493px;
+}
+
+.car__door {
+  width: 1px;
+  height: 188px;
+  background: #000;
+  left: 367px;
+  top: 22px;
+  z-index: 4;
+}
+
+.car__door::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 56px;
+  transform: rotate(-126deg);
+  top: 50px;
+  left: -207px;
+  background: #000;
+}
+
+.car__door::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 59px;
+  top: 71px;
+  left: -175px;
+  background: #000;
+}
+
+.door-handle__body {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  top: 104px;
+  left: 331px;
+  z-index: 5;
+}
+
+.door-handle__inner {
+  width: 33px;
+  height: 10px;
+  border-radius: 42px;
+  border: 1px solid #000;
+  top: 111px;
+  left: 326px;
+  z-index: 6;
+}
+
+.window-car {
+  position: relative;
+}
+
+.window-car__body {
+  width: 359px;
+  height: 149px;
+  border-radius: 600px 600px 0 0;
+  background: #000;
+  left: 147px;
+  top: 22px;
+}
+
+.window-car__bottom {
+  width: 389px;
+  height: 115px;
+  border-radius: 32px 44px 0 0;
+  top: 93px;
+  left: 137px;
+  border-bottom: 1px solid #000;
+  z-index: 3;
+}
+
+.window-car__pillar {
+  width: 23px;
+  height: 70px;
+  background: #1A222F;
+  top: 22px;
+  left: 356px;
+}
+
+.car__side-mirror {
+  width: 22px;
+  height: 22px;
+  border-radius: 54px 19px 19px 10px;
+  border: 1px solid #000;
+  top: 65px;
+  left: 176px;
+  z-index: 5;
+}
+
+.headlight * {
+  background: #d9d9d9;
+  border: 1px solid #000;
+}
+
+.headlight {
+  perspective: 100px;
+  z-index: 3;
+}
+
+.headlight__top {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  transform: rotate3d(0, 1, 1, 35deg);
+  top: 109px;
+  left: 17px;
+}
+
+.headlight__top:hover {
+  box-shadow: -20px 0px 60px 0px rgba(255, 255, 0, 0.75);
+}
+
+.headlight__bottom {
+  width: 27px;
+  height: 17px;
+  border-radius: 42px;
+  top: 170px;
+  left: 0;
+  transform: rotate(11deg);
+}
+
+.headlight__door {
+  width: 17px;
+  height: 10px;
+  border-radius: 42px;
+  top: 104px;
+  left: 156px;
+}
+
+.wheel * {
+  border-radius: 50%;
+}
+
+.wheel {
+  position: relative;
+  z-index: 7;
+}
+
+.wheel__body {
+  width: 112px;
+  height: 112px;
+  background: #201F25;
+  border: 1px solid #000;
+}
+
+.wheel__rim {
+  width: 78px;
+  height: 78px;
+  top: 17px;
+  left: 17px;
+  background: #A3A4A9;
+}
+
+.wheel__rim-inner {
+  width: 68px;
+  height: 68px;
+  top: 22px;
+  left: 22px;
+  background: #040406;
+}
+
+.wheel__hubcap {
+  top: 22px;
+  left: 26px;
+}
+
+.wheel__hubcap svg {
+  background: #040406;
+}
+
+.wheel__axle {
+  width: 30px;
+  height: 30px;
+  top: 41px;
+  left: 41px;
+  background: #D9D9D9;
+}
+
+.car__wheel--front {
+  left: 67px;
+  bottom: -175px;
+}
+
+.car__wheel--rear {
+  left: 470px;
+  bottom: -175px;
+}
