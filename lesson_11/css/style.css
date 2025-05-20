@@ -140,7 +140,7 @@
 
 .second-task {
   position: relative;
-  /* overflow: clip; */
+  overflow: clip;
   max-width: 1440px;
   min-height: 1024px;
   margin: 0 auto;
