@@ -38,9 +38,10 @@
 }
 
 .first-task {
-  max-width: 1400px;
+  max-width: 1360px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 40px;
+  margin-bottom: 30px;
 }
 
 .title {
@@ -402,7 +403,7 @@
   z-index: 6;
 }
 
-.car__fender--bottom {
+.fender__bottom {
   width: 137px;
   height: 84px;
   border-radius: 523px 523px 20px 20px;
