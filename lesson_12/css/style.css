@@ -351,9 +351,17 @@
   background: #343333;
 }
 
-.highway__markup--hidden {
+.highway__markup:not(:last-child) {
+  margin-right: 150px;
+}
+
+.highway__markup:last-child {
+  position: absolute;
+  right: 75px;
+}
+
+.highway__markup {
   display: inline-block;
-  left: -150px;
   width: 150px;
   height: 15px;
   background: #fff;
@@ -366,22 +374,9 @@
   animation-name: move-highway;
 }
 
-.highway__markup:not(:last-child) {
-  margin-right: 150px;
-}
-
-.highway__markup:last-child {
+.highway__markup--hidden {
   position: absolute;
-  right: -80px;
-}
-
-.highway__markup {
-  display: inline-block;
-  width: 150px;
-  height: 15px;
-  background: #fff;
-  position: relative;
-  top: 150px;
+  left: -305px;
 
   animation-timing-function: linear;
   animation-duration: 1.5s;
@@ -629,7 +624,7 @@
   border: 3px dashed #000;
 
   animation-timing-function: linear;
-  animation-duration: 6s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-name: rotate;
 }
@@ -651,12 +646,6 @@
 }
 
 .wheel__hubcap {
-  /* animation-timing-function: linear;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-name: rotate;
-  transform-origin: center center; */
-
   top: 22px;
   left: 22px;
 }
@@ -664,7 +653,7 @@
 .wheel__hubcap svg {
   background: #040406;
   animation-timing-function: linear;
-  animation-duration: 3s;
+  animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-name: rotate;
 }
