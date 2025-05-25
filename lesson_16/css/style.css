@@ -1,8 +1,7 @@
-/* Підключення фрифтів */
+/* Підключення шрифтів */
 
-/* Google Fonts */
-/* @import url("https://fonts.googleapis.com/css2?family=Carme&display=swap"); */
 /* Google Fonts (Plugin) */
+/* @import url("https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700&display=swap"); */
 
 /* Локальне підключення шрифтів */
 @import url("fonts.css");
@@ -10,10 +9,18 @@
 /* Скидання стилів */
 @import url("reset.css");
 
+/* Компоненти */
+@import url("button.css");
+/* .... */
+
 /* Основні стилі */
+
+.header {
+  text-align: center;
+}
+
 .back-link {
-  display: inline-property;
-  margin-top: 20px;
+  margin: 20px 0;
   padding: 10px 20px;
   background-color: #28a745;
   color: white;
@@ -26,4 +33,21 @@
 .back-link:hover {
   background-color: #218838;
   transform: translateY(-2px);
+}
+
+body {
+  font-family: "Gilroy", sans-serif;
+  color: #fff;
+}
+
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper>main {
+  flex-grow: 1;
 }

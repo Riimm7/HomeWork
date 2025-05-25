@@ -1,8 +1,7 @@
-/* Підключення фрифтів */
+/* Підключення шрифтів */
 
-/* Google Fonts */
-/* @import url("https://fonts.googleapis.com/css2?family=Carme&display=swap"); */
 /* Google Fonts (Plugin) */
+@import url(https://fonts.googleapis.com/css?family=Inter:regular,600,700&display=swap);
 
 /* Локальне підключення шрифтів */
 @import url("fonts.css");
@@ -10,10 +9,18 @@
 /* Скидання стилів */
 @import url("reset.css");
 
+/* Компоненти */
+@import url("button.css");
+/* .... */
+
 /* Основні стилі */
+
+.header {
+  text-align: center;
+}
+
 .back-link {
-  display: inline-property;
-  margin-top: 20px;
+  margin: 20px 0;
   padding: 10px 20px;
   background-color: #28a745;
   color: white;
@@ -26,4 +33,203 @@
 .back-link:hover {
   background-color: #218838;
   transform: translateY(-2px);
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
+  color: #fff;
+}
+
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper>main {
+  flex-grow: 1;
+}
+
+.title {
+  font-size: 38px;
+  line-height: 121%;
+}
+
+.title span {
+  font-weight: 700;
+}
+
+.page {
+  font-weight: 400;
+}
+
+.container {}
+
+.teachers {
+  padding-top: 61px;
+  padding-bottom: 102px;
+  background: #412672;
+}
+
+.teachers__container {
+  max-width: 1201px;
+  margin: 0 auto;
+}
+
+.teachers__title {
+  margin-bottom: 31px;
+}
+
+.teachers__cards {
+  display: flex;
+  gap: 20px;
+}
+
+.teachers__card {
+  flex-basis: 387px;
+  padding: 20px;
+  background: #fff;
+  color: #000;
+}
+
+.teachers__card:first-child {
+  background: #FFBE48;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 16px;
+}
+
+.card__img {}
+
+.card__title {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.card__info {
+  flex-grow: 1;
+  color: #4f4f4f;
+}
+
+.card__link {
+  color: #FE3F3F;
+}
+
+.promo {
+  background: #fff;
+  color: #412672;
+}
+
+.promo__container {
+  max-width: 1201px;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 55px;
+  padding-bottom: 72px;
+}
+
+.promo__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-right: 90px;
+  max-width: 518px;
+}
+
+.promo__title {
+  font-size: 34px;
+}
+
+.promo__text {
+  font-size: 22px;
+}
+
+.promo__list {
+  font-size: 20px;
+  line-height: 255%;
+  color: #4f4f4f;
+}
+
+.promo__list p {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.promo__list p::before {
+  content: "";
+  /* align-self: flex-start; */
+  background: url("../img/check-icon.svg") 0 0 / 100% no-repeat;
+  flex-shrink: 0;
+  height: 29px;
+  width: 29px;
+  /* не флекс базис, бо можуть вилізти артефакти
+
+  https://www.youtube.com/live/VFcQ3pY0-GM?si=Zzmjl6h0cy6ZXJoy&t=5920
+
+  */
+}
+
+.promo__img {
+  margin-right: -172px;
+}
+
+.feature {
+  background: #412672;
+  padding: 70px 0;
+}
+
+.feature__container {
+  max-width: 1201px;
+  margin: 0 auto;
+}
+
+.feature__title {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.feature__title span {
+  font-weight: 700;
+}
+
+.feature__row {}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row__item {}
+
+.item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.item__icon {}
+
+.item__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 24px;
+}
+
+.item__title {
+  font-weight: 700;
+}
+
+.item__subtitle {
+  font-size: 15px;
+  line-height: 160%;
 }
