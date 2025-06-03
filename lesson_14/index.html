@@ -15,11 +15,170 @@
     </header>
     <main class="page">
       <div class="container">
+        <form class="checkout" action="#">
+          <div class="checkout__form">
+            <div class="billing-information">
+              <h2 class="billing-information__title">Billing Information</h2>
+              <div class="billing-information__name">
+                <div class="billing-information__first-name">
+                  <label class="label">
+                    <span class="label__title">First name</span>
+                    <input required tabindex="1" placeholder="Your first name" name="data[]" type="text">
+                  </label>
+                </div>
+                <div class="billing-information__last-name">
+                  <label class="label">
+                    <span class="label__title">Last name</span>
+                    <input required tabindex="2" placeholder="Your last name" name="data[]" type="text">
+                  </label>
+                </div>
+                <div class="billing-information__company-name">
+                  <label class="label">
+                    <span class="label__title">Company Name <span>(optional)</span></span>
+                    <input tabindex="3" placeholder="Company name" name="data[]" type="text">
+                  </label>
+                </div>
+              </div>
 
+              <div class="billing-information__street">
+                <label class="label">
+                  <span class="label__title">Street Address</span>
+                  <input required tabindex="4" placeholder="Street Address" name="data[]" type="text">
+                </label>
+              </div>
+
+              <div class="billing-information__location location">
+                <div class="location__country">
+                  <label class="label">
+                    <span class="label__title">Country / Region</span>
+                    <select tabindex="5" name="data[]">
+                      <option value="" disabled selected hidden>Select</option>
+                      <option value="A">A</option>
+                      <option value="B">B</option>
+                      <option value="C">C</option>
+                    </select>
+                  </label>
+                </div>
+                <div class="location__states">
+                  <label class="label">
+                    <span class="label__title">States</span>
+                    <select tabindex="6" name="data[]">
+                      <option value="" disabled selected hidden>Selects</option>
+                      <option value="A">A</option>
+                      <option value="B">B</option>
+                      <option value="C">C</option>
+                    </select>
+                  </label>
+                </div>
+                <div class="location__zip-code">
+                  <label class="label">
+                    <span class="label__title">Zip Code</span>
+                    <input type="tel" required tabindex="7" placeholder="Zip Code" name="data[]">
+                  </label>
+                </div>
+              </div>
+
+              <div class="billing-information__contacts contacts">
+                <div class="contacts__email">
+                  <label class="label">
+                    <span class="label__title">Email</span>
+                    <input required tabindex="8" placeholder="Email Address" name="data[]" type="email">
+                  </label>
+                </div>
+                <div class="contacts__phone">
+                  <label class="label">
+                    <span class="label__title">Phone</span>
+                    <input type="tel" required tabindex="9" placeholder="Phone number" name="data[]">
+                  </label>
+                </div>
+              </div>
+
+              <div class="billing-information__different-address">
+                <label class="label">
+                  <input type="checkbox" tabindex="10" name="data[]">
+                  <span class="label__title">Ship to a different address</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="additional-info">
+              <h2 class="additional-info__title">Additional Info</h2>
+              <div class="additional-info__notes">
+                <label class="label">
+                  <span class="label__title">Order Notes (Optional)</span>
+                  <textarea tabindex="11" placeholder="Notes about your order, e.g. special notes for delivery"
+                    name="data[]"></textarea>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="checkout__aside aside">
+            <div class="aside__order order">
+              <h3 class="order__title">Order Summary</h3>
+              <div class="order__items">
+                <div class="order__item item">
+                  <div class="item__img">
+                    <img src="img/green_capsicum.jpg" alt="green capsicum">
+                  </div>
+                  <div class="item__title">Green Capsicum</div>
+                  <div class="item__quantity">5</div>
+                  <div class="item__price">70.00</div>
+                </div>
+                <div class="order__item item">
+                  <div class="item__img">
+                    <img src="img/red_capsicum.jpg" alt="red capsicum">
+                  </div>
+                  <div class="item__title">Red Capsicum</div>
+                  <div class="item__quantity">1</div>
+                  <div class="item__price">14.00</div>
+                </div>
+              </div>
+              <div class="order__subtotal subtotal">
+                <div class="subtotal__title">Subtotal:</div>
+                <div class="subtotal__value">84.00</div>
+              </div>
+              <div class="order__shipping shipping">
+                <div class="shipping__title">Shipping:</div>
+                <div class="shipping__value">Free</div>
+              </div>
+              <div class="order__total total">
+                <div class="total__title">Total:</div>
+                <div class="total__value">84.00</div>
+              </div>
+            </div>
+
+            <div class="aside__payment-method payment-method">
+              <h3 class="payment-method__title">Payment Method</h3>
+              <div class="payment-method__radiobuttons">
+                <div class="radiobutton">
+                  <label class="radiobutton__label">
+                    <input class="radiobutton__input" type="radio" name="payment">
+                    <span class="radiobutton__title">Cash on Delivery</span>
+                  </label>
+                </div>
+                <div class="radiobutton">
+                  <label class="radiobutton__label">
+                    <input class="radiobutton__input" type="radio" name="payment">
+                    <span class="radiobutton__title">Paypal</span>
+                  </label>
+                </div>
+                <div class="radiobutton radiobutton--disabled">
+                  <label class="radiobutton__label">
+                    <input class="radiobutton__input" disabled type="radio" name="payment">
+                    <span class="radiobutton__title">Amazon Pay</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <button class="aside__button" type="submit">Place Order</button>
+          </div>
+        </form>
       </div>
     </main>
     <footer class="footer"></footer>
   </div>
 </body>
+
 
 </html>
