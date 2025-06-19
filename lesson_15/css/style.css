@@ -99,6 +99,7 @@ body {
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .products__button::after {
@@ -109,6 +110,7 @@ body {
   width: 15px;
   height: 12px;
   background: url(../img/icon_green-arrow.svg) 100% 100% / contain;
+  transition: transform 0.3s ease;
 }
 
 .products__items {
@@ -126,6 +128,7 @@ body {
   border: 1px solid #E6E6E6;
   display: flex;
   flex-direction: column;
+  transition: box-shadow 0.3s ease, border 0.3s ease;
 }
 
 .item--sale {}
@@ -165,6 +168,7 @@ body {
   border: 1px solid #f2f2f2;
   border-radius: 50%;
   cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .actions__wishlist {
@@ -177,13 +181,13 @@ body {
 
 .item__img {
   padding: 5px;
+  aspect-ratio: 264 / 240;
 }
 
 .item__img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  aspect-ratio: 264 / 240;
 }
 
 .item__bottom {
@@ -247,6 +251,7 @@ body {
   margin-right: 4px;
   cursor: pointer;
   align-self: center;
+  transition: background-color 0.3s ease;
 }
 
 .news {
@@ -313,13 +318,13 @@ body {
 
 .card__img {
   position: relative;
+  aspect-ratio: 424 / 324;
 }
 
 .card__img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  aspect-ratio: 424 / 324;
 }
 
 .card__content {
@@ -399,9 +404,10 @@ body {
   flex-grow: 1;
   font-size: 18px;
   font-weight: 500;
-  color: #2C742F;
   margin-bottom: 20px;
+  transition: color 0.3s ease;
 }
+
 
 .card__more {
   position: relative;
@@ -412,6 +418,7 @@ body {
   font-size: 16px;
   line-height: 120%;
   font-weight: 600;
+  transition: all 0.3s ease;
 }
 
 .card__more::after {
@@ -423,15 +430,24 @@ body {
   height: 12px;
   flex: 1 1 15px;
   background: url(../img/icon_green-arrow.svg) center center / 15px 12px no-repeat;
+  transition: transform 0.3s ease;
 }
 
 /* для hover */
 @media (any-hover: hover) {
+  .products__button:hover {
+    text-decoration: underline;
+  }
+
+  .products__button:hover::after {
+    transform: translate(4px);
+  }
+
   .item:hover .item__actions {
     transform: translateX(-16px);
     opacity: 1;
     visibility: visible;
-    pointer-events: auto;
+    pointer-events: initial;
   }
 
   .item:hover .item__button {
@@ -441,6 +457,24 @@ body {
   .item:hover {
     box-shadow: 0px 0px 13px 0px rgba(32, 181, 38, 0.32);
     border: 1px solid #2C742F;
+  }
+
+  .card:hover .card__title {
+    color: #2C742F;
+  }
+
+  .card__more:hover {
+    text-decoration: underline;
+  }
+
+  .card__more:hover::after {
+    transform: translate(4px);
+  }
+
+  .actions__wishlist:hover,
+  .actions__quick-view:hover {
+    background-color: #F2F2F2;
+    transform: scale(1.1);
   }
 }
 
