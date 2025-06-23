@@ -73,3 +73,15 @@ body {
   aspect-ratio: 312 / 280;
   /* object-position: top; */
 }
+
+/* для відображення на сенсорних пристроях */
+@media (any-hover: none) {}
+
+/* Tablet */
+@media (max-width: 991.98px) {}
+
+/* Tablet */
+@media (max-width: 767.98px) {}
+
+/* Mobile */
+@media (max-width: 479.98px) {}

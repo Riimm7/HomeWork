@@ -11,15 +11,54 @@
 <body>
   <div class="wrapper">
     <header class="header">
-      <div><a href="https://riimm7.github.io/HomeWork/index.html" class="back-link">На головну</a></div>
+      <div class="header__container">
+        <div class="header__logo logo">
+          <a href="#" class="logo__img">
+            <img src="img/logo.png" srcset="img/logo.png 1x, img/logo-x2.png 2x, img/logo-x3.png 3x"
+              alt="Education Pro Logo" />
+            <span>Education Pro</span>
+          </a>
+        </div>
+        <nav class="header__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Quality Policy</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Languages</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header__actions">
+          <a class="header__button" href="#">Get Quote</a>
+          <button class="header__burger">
+            <span></span>
+          </button>
+        </div>
+      </div>
     </header>
     <main class="page">
-      <div class="container">
-
+      <div class="hero">
+        <picture class="hero__bg">
+          <source srcset="img/hero.avif 1x, img/hero-2x.avif 2x, img/hero-3x.avif 3x" type="image/avif">
+          <img src="img/hero.jpg"
+            alt="A man stands silhouetted against a vibrant sunset, with warm hues of orange and pink filling the sky.">
+        </picture>
+        <div class="hero__content">
+          <div><a href="https://riimm7.github.io/HomeWork/index.html" class="back-link">На головну</a></div>
+        </div>
       </div>
     </main>
     <footer class="footer"></footer>
   </div>
 </body>
+
+<script>
+  const burger = document.querySelector('.header__burger');
+  const menu = document.querySelector('.header__menu');
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('active');
+    menu.classList.toggle('active');
+  });
+</script>
 
 </html>
