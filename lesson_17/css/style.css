@@ -1,7 +1,8 @@
 /* Підключення шрифтів */
 
 /* Google Fonts (Plugin) */
-/* @import url("https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700&display=swap"); */
+@import url(https://fonts.googleapis.com/css?family=Carme:regular);
+@import url(https://fonts.googleapis.com/css?family=Poppins:regular,500,600&display=swap);
 
 /* Локальне підключення шрифтів */
 @import url("fonts.css");
@@ -12,13 +13,6 @@
 /* Компоненти */
 @import url("button.css");
 /* .... */
-
-/*
-Базові значення ширин екранів
-> 992 = PC
-<= 992 >= 768 = Tablet
-< 768 = Mobile Phones
-*/
 
 /* Основні стилі */
 
@@ -44,7 +38,7 @@
 
 body {
   font-family: "Gilroy", sans-serif;
-  color: #fff;
+  color: #000;
 }
 
 .wrapper {
@@ -59,13 +53,6 @@ body {
   flex-grow: 1;
 }
 
-[class*="__container"] {
-  max-width: 1350px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 .ibg {
   width: 100%;
   height: 100%;
@@ -74,14 +61,682 @@ body {
   /* object-position: top; */
 }
 
+.blossomia {
+  font-family: "KoPub Batang", "Georgia", "Times New Roman", serif;
+}
+
+.blossomia__container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.blossomia__wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+.blossomia__flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.flex-blossomia {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+
+.flex-blossomia .item-blossomia picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 400 / 430;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.flex-blossomia__wrapper-button {
+  padding: 10px;
+  border: 1px solid #DBCCBA;
+  margin-bottom: 30px;
+}
+
+.flex-blossomia__button {
+  position: relative;
+  background: #DBCCBA;
+  font-size: 17px;
+  line-height: 137.7%;
+  padding: 9px 63px 9px 30px;
+  transition: box-shadow 0.5s ease-out;
+}
+
+.flex-blossomia__button::after {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 14px;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  background: url(/lesson_17/img/blossomia/icons/right-arrow.png) center / cover no-repeat;
+  transition: transform 0.5s ease;
+}
+
+
+.grid-blossomia {
+  display: grid;
+  column-gap: 30px;
+  grid-template-columns: minmax(200px, 370px) minmax(200px, 370px);
+  align-items: stretch;
+}
+
+.grid-blossomia__title {
+  font-size: 60px;
+  font-weight: 300;
+  grid-column: 1/3;
+  margin-top: 52px;
+  margin-bottom: 78px;
+}
+
+.grid-blossomia__item:nth-child(2),
+.grid-blossomia__item:nth-child(3) {
+  padding-bottom: 23px;
+}
+
+.item-blossomia {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-blossomia picture {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.item-blossomia img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 370 / 380;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.item-blossomia__wrapper {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 15px 0;
+}
+
+.item-blossomia__info {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.item-blossomia__title {
+  position: relative;
+  font-size: 20px;
+  font-weight: 400;
+  color: #2C2C2C;
+  flex-grow: 1;
+  padding: 1px 0;
+}
+
+.item-blossomia__title::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #2C2C2C;
+  transition: width 0.3s ease;
+}
+
+.item-blossomia__price {
+  font-family: "Carme", "Segoe UI", "Roboto", "Arial", sans-serif;
+  font-size: 18px;
+  color: #4E4E4E;
+  padding: 2px 0;
+}
+
+.item-blossomia__buttons {
+  display: flex;
+  gap: 20px;
+  flex-shrink: 0;
+  margin-right: 6px;
+}
+
+.item-blossomia__like,
+.item-blossomia__basket {
+  width: 23px;
+  height: 23px;
+  transition: transform 0.3s ease;
+}
+
+.item-blossomia__like img,
+.item-blossomia__basket img {
+  object-fit: none;
+}
+
+
+.grid-blossomia__button {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.377;
+}
+
+.ecobazar {
+  font-family: Poppins, 'Lato', 'Open Sans', 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+.ecobazar__container {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.ecobazar__head {
+  margin-bottom: 36px;
+}
+
+.head {
+  text-align: center;
+}
+
+.head__subtitle {
+  color: #20B526;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.28px;
+  margin-bottom: 8px;
+}
+
+.head__title {
+  font-weight: 600;
+  color: #1A1A1A;
+  font-size: 36px;
+  line-height: 120%;
+}
+
+.ecobazar__summer-sale {
+  margin-bottom: 24px;
+}
+
+.summer-sale {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(min(248px, 100%), 1fr));
+  grid-auto-rows: 1fr;
+}
+
+.summer-sale__promo {
+  padding-top: 24px;
+  background: url(../img/ecobazar/summer-sale_bg.jpg) center / 100% no-repeat;
+}
+
+.promo {
+  text-align: center;
+}
+
+.promo__subtitle {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.36px;
+  color: #1A1A1A;
+  margin-bottom: 8px;
+}
+
+.promo__title {
+  text-transform: uppercase;
+  color: #00B207;
+  font-size: 32px;
+  line-height: 120%;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.promo__button {
+  display: inline-flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  color: #00B207;
+  line-height: 120%;
+  font-weight: 600;
+  padding: 14px 32px;
+  border-radius: 43px;
+  background-color: #fff;
+  transition: box-shadow 0.5s ease;
+}
+
+.promo__button::after {
+  content: "";
+  position: static;
+  top: 16.5px;
+  right: 32px;
+  width: 15px;
+  height: 12px;
+  background: url(../img/ecobazar/icons/green-arrow.svg) center / 100% no-repeat;
+  transition: transform 0.5s ease;
+}
+
+.summer-sale__item {}
+
+.item-summer {
+  position: relative;
+  border: 1px solid #E6E6E6;
+}
+
+.actions {
+  position: absolute;
+  display: flex;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.item-summer .actions {
+  top: 16px;
+  right: 0px;
+  gap: 6px;
+  flex-direction: column;
+}
+
+.actions__wishlist,
+.actions__quick-view,
+.actions__cart {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #f2f2f2;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.5s ease-in-out;
+}
+
+.actions__cart {
+  background: url('../img/ecobazar/icons/bag.svg') center / 20px 20px no-repeat, #ffffff;
+}
+
+.actions__wishlist {
+  background: url('../img/ecobazar/icons/heart.svg') center / 20px 20px no-repeat, #ffffff;
+}
+
+.actions__quick-view {
+  background: url('../img/ecobazar/icons/eye.svg') center / 20px 20px no-repeat, #ffffff;
+}
+
+.item-summer__img {
+  aspect-ratio: 246 / 246;
+  display: block;
+}
+
+.item-summer__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item-summer__bottom {
+  padding: 12px 16px 16px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-summer__info {}
+
+.info {
+  line-height: 150%;
+}
+
+.info__title {
+  color: #4D4D4D;
+}
+
+.info__price {
+  color: #1A1A1A;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.info__rate {}
+
+.item-summer__cart {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: url('../img/ecobazar/icons/bag.svg') center / 20px 20px no-repeat, #F2F2F2;
+  cursor: pointer;
+  transition: background-color 0.5s ease-in;
+}
+
+.ecobazar__hot-sale {
+  margin-bottom: 40px;
+}
+
+
+.hot-sale__grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr));
+  grid-auto-rows: 1fr;
+}
+
+.hot-sale__hot-deals,
+.hot-sale__best-seller,
+.hot-sale__top-rated {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hot-sale__title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+  color: #1A1A1A;
+}
+
+.hot-sale__item {}
+
+.item {
+  position: relative;
+  display: flex;
+  gap: 12px;
+  border: 1px solid #E6E6E6;
+}
+
+.item__actions {}
+
+.item .actions {
+  top: 73px;
+  left: 124px;
+  gap: 12px;
+}
+
+.item__img {
+  width: 112px;
+  aspect-ratio: 1 / 1;
+  margin-bottom: 2px;
+}
+
+.item__img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.item__content {
+  padding: 24px 0;
+}
+
+.item__title {
+  color: #4D4D4D;
+  line-height: 150%;
+}
+
+.item__price {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1A1A1A;
+  margin-bottom: 6px;
+  line-height: 150%;
+}
+
+.item__price span {
+  margin-left: 2px;
+  color: #999999;
+}
+
+.item__rate {
+  line-height: 0;
+}
+
+.hot-sale__promo {
+  background: url(../img/ecobazar/hot-sale_bg.jpg) center / cover no-repeat;
+  padding-top: 32px;
+}
+
+.hot-sale__promo .promo__subtitle {
+  margin-bottom: 12px;
+}
+
+.hot-sale__promo .promo__title {
+  text-transform: none;
+  color: #1A1A1A;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.hot-sale__promo .promo__title span {
+  font-weight: 600;
+}
+
+/*
+Базові значення ширин екранів
+> 992 = PC
+<= 992 >= 768 = Tablet
+< 768 = Mobile Phones
+*/
+
 /* для відображення на сенсорних пристроях */
-@media (any-hover: none) {}
+@media (any-hover: hover) {
+  .flex-blossomia__button:hover {
+    box-shadow: 0px 0px 0px 10px rgba(219, 204, 186, 1);
+    -webkit-box-shadow: 0px 0px 0px 10px rgba(219, 204, 186, 1);
+    -moz-box-shadow: 0px 0px 0px 10px rgba(219, 204, 186, 1);
+  }
+
+  .flex-blossomia__button:hover::after {
+    transform: translate(10px, -50%);
+  }
+
+  .flex-blossomia__button:hover {
+    transform: scale(1.05);
+  }
+
+  .item-blossomia img:hover {
+    transform: scale(0.98);
+  }
+
+  .item-blossomia__title:hover::before {
+    width: 100%;
+  }
+
+  .item-blossomia__like:hover,
+  .item-blossomia__basket:hover {
+    transform: scale(1.2);
+  }
+
+  .promo__button:hover {
+    box-shadow: 0px 0px 0px 1px rgba(0, 178, 7, 1);
+  }
+
+  .promo__button:hover::after {
+    transform: translateX(5px);
+  }
+
+  .item-summer:hover .item-summer__actions {
+    transform: translateX(-16px);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
+  }
+
+  .item-summer:hover .item-summer__cart {
+    background: url('../img/ecobazar/icons/white-bag.svg') center / 20px 20px no-repeat, #00B207;
+  }
+
+  .item-summer:hover {
+    box-shadow: 0px 0px 12px 0px rgba(32, 181, 38, 0.32);
+    border: 1px solid #2C742F;
+  }
+
+  .actions__cart:hover,
+  .actions__wishlist:hover,
+  .actions__quick-view:hover {
+    border: none;
+  }
+
+  .actions__cart:hover {
+    background: #00B207 url('../img/ecobazar/icons/white-bag.svg') center / 20px 20px no-repeat;
+  }
+
+  .actions__wishlist:hover {
+    background: #00B207 url('../img/ecobazar/icons/white-heart.svg') center / 20px 20px no-repeat;
+  }
+
+  .actions__quick-view:hover {
+    background: #00B207 url('../img/ecobazar/icons/white-eye.svg') center / 20px 20px no-repeat;
+  }
+
+  .item:hover {
+    border: 1px solid #2C742F;
+    box-shadow: 0px 0px 12px 0px rgba(32, 181, 38, 0.32);
+  }
+
+  .item:hover .item__price,
+  .item:hover .item__rate {
+    display: none;
+  }
+
+  .item:hover .item__actions {
+    transform: translateY(-20px);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
+  }
+
+}
+
+/* PC */
+@media (max-width: 1135px) {
+  .grid-blossomia__title {
+    font-size: 52px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .grid-blossomia__title {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 845px) {
+  .grid-blossomia__title {
+    font-size: 39px;
+  }
+}
+
+@media (min-width: 768px) {
+  .flex-blossomia__wrapper-button {
+    align-self: self-start;
+  }
+}
 
 /* Tablet */
-@media (max-width: 991.98px) {}
+@media (max-width: 767.98px) {
+  .blossomia__wrapper {
+    flex-direction: column-reverse;
+    gap: 0;
+  }
 
-/* Tablet */
-@media (max-width: 767.98px) {}
+  .blossomia__flex-container {
+    align-items: center;
+  }
+
+  .flex-blossomia {
+    flex-direction: row;
+    gap: 30px;
+    max-width: 100%;
+  }
+
+  .grid-blossomia {
+    grid-template-columns: minmax(200px, 370px) minmax(200px, 370px);
+  }
+
+  .grid-blossomia__title {
+    font-size: 32px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+
+  .grid-blossomia__item:nth-child(2),
+  .grid-blossomia__item:nth-child(3) {
+    padding-bottom: 0;
+  }
+
+  .item-blossomia__buttons {
+    gap: 10px;
+  }
+
+  .item-blossomia__like,
+  .item-blossomia__basket {
+    width: 30px;
+    height: 30px;
+  }
+}
 
 /* Mobile */
-@media (max-width: 479.98px) {}
+
+@media (min-width: 479.98px) {
+  .flex-blossomia__button {
+    width: 184px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .blossomia__flex-container {
+    gap: 15px;
+  }
+
+  .flex-blossomia {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .flex-blossomia__wrapper-button {
+    width: 100%;
+  }
+
+  .flex-blossomia__button {
+    width: 100%;
+    text-align: center;
+    padding: 9px 30px;
+  }
+
+  .flex-blossomia__button::after {
+    display: none;
+  }
+
+  .grid-blossomia {
+    display: block;
+  }
+
+  .grid-blossomia__title {
+    text-align: center;
+    font-size: 32px;
+    margin-top: 16px;
+    margin-bottom: 24px;
+  }
+
+  .item-blossomia__price {
+    font-size: 16px;
+  }
+}
